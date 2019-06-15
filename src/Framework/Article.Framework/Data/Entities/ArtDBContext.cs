@@ -17,15 +17,12 @@ namespace Article.Framework.Data.Entities
 
         public virtual DbSet<Category> Categories { get; set; }
 
-        public virtual DbSet<CTE_Category> CTE_Categories { get; set; }
-
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=ArticleWepAPI;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=ArticleWepAPI;Integrated Security=True");
             }
         }
 
@@ -77,22 +74,6 @@ namespace Article.Framework.Data.Entities
 
                 entity.Property(e => e.CategoryUrl).HasMaxLength(250);
             });
-
-            modelBuilder.Entity<CTE_Category>(entity => {
-                entity.Property(e => e.CategoryID).HasColumnName("CategoryID");
-                entity.Property(e => e.CategoryName).HasColumnName("CategoryName");
-                entity.Property(e => e.CategoryParentId).HasColumnName("CategoryParentId");
-                entity.Property(e => e.CategoryDescription).HasColumnName("CategoryDescription");
-                entity.Property(e => e.CategoryActived).HasColumnName("CategoryActived");
-                entity.Property(e => e.CategoryOrder).HasColumnName("CategoryOrder");
-                entity.Property(e => e.CategoryTagName).HasColumnName("CategoryTagName");
-                entity.Property(e => e.CategorySite).HasColumnName("CategorySite");
-                entity.Property(e => e.alevel).HasColumnName("alevel");
-                entity.Property(e => e.sort).HasColumnName("sort");
-                entity.Property(e => e.iCategoryName).HasColumnName("iCategoryName");
-            });
-
-           
 
             OnModelCreatingPartial(modelBuilder);
         }

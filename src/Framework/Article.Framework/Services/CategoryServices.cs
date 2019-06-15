@@ -4,35 +4,53 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Article.Framework.Domain;
+using AutoMapper;
+
 namespace Article.Framework.Services
 {
     public class CategoryServices : SqlCommand, ICategoryServices
     {
         ArtDBContext _artDBContext;
         private readonly DbSet<Category> _category;
-        public CategoryServices(ArtDBContext artDBContext)
+        private readonly IMapper _mapper;
+
+        public CategoryServices(ArtDBContext artDBContext, IMapper mapper)
         {
             _artDBContext = artDBContext;
             _category = _artDBContext.Set<Category>();
+            _mapper = mapper;
         }
-        /// <summary>
-        /// lấy danh mục
-        /// </summary>
-        /// <param name="site">ID site</param>
-        /// <returns></returns>
-        public Task<List<Category>> GetAllCategoryBySite(int site) => Task.Run(() => GetList(site));
-        private List<Category> GetList(int site) => _category.Where(category => category.CategorySite == site).ToList();
 
-        public Task<List<CTE_Category>> GetAllCategoryBySite(int site, int _CategoryId, int pCurrentPage, int vPageSize, ref int vCount)
+        #region  Lấy thông tin danh mục không đệ quy
+        public Task<List<Category>> GetCategoriesBySite(int site) => Task.Run(() => CategoriesBySite(site));
+        private List<Category> CategoriesBySite(int site) => _category.Where(category => category.CategorySite == site).ToList();
+        #endregion
+
+
+        #region lấy thông tin danh mục có đệ quy
+        public Task<IEnumerable<CategoriesRecursive>> GetCategoriesRecursive() => Task.Run(() => ResultCategoriesRecursive());
+
+        private IEnumerable<CategoriesRecursive> ResultCategoriesRecursive()
         {
-            int o_Count = 0;
-            vCount = o_Count;
-            return Task.Run(() => GetList(site, _CategoryId, pCurrentPage, vPageSize, ref o_Count));
+            var _categories = _category.Where(x => x.CategoryParentId == 0).ToList();
+            var _categoriesRecursive = _mapper.Map<IEnumerable<CategoriesRecursive>>(_categories);
+            _categoriesRecursive = Traverse(_categoriesRecursive);
+            return _categoriesRecursive;
         }
-        private List<CTE_Category> GetList(int site, int vCM_ID, int pCurrentPage, int vPageSize, ref int vCount)
 
-        => _artDBContext.CTE_Categories.FromSql(CTE_Category_All, 0).ToList();
-
+        private IEnumerable<CategoriesRecursive> Traverse(IEnumerable<CategoriesRecursive> categories)
+        {
+            foreach (var category in categories)
+            {
+                var _categories = _category.Where(x => x.CategoryParentId == category.CategoryId).ToList();
+                var subCategories = _mapper.Map<IEnumerable<CategoriesRecursive>>(_categories);
+                category.Children = subCategories;
+                category.Children = Traverse(category.Children).ToList();
+            }
+            return categories;
+        } 
+        #endregion
 
     }
 

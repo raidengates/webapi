@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Article.Framework.Data.Entities;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿using Article.Framework.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using System.Threading.Tasks;
 
 namespace Article.WebAPI.Controllers
 {
@@ -14,17 +8,16 @@ namespace Article.WebAPI.Controllers
     [ApiController]
     public class ArticleController : ControllerBase
     {
-        public ArticleController()
+        ICategoryServices _categoryServices;
+        public ArticleController(ICategoryServices categoryServices)
         {
-
+            _categoryServices = categoryServices;
         }
+        [HttpGet("values")]
+        public async Task<IActionResult> index() => Content("hello mother fucker!");
 
-        [HttpPost("category")]
-        public async Task<IActionResult> GetCategory()
-        {
-           List<Category>  _category = new List<Category>();
-            return Ok(_category);
-        }
+        [HttpPost("getcategory")]
+        public async Task<IActionResult> GetCategory() => Ok(await _categoryServices.GetCategoriesRecursive());
 
     }
 }

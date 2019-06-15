@@ -2,9 +2,11 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "Article.Framework/1.0.3": {
+      "Article.Framework/1.0.9": {
         "type": "package",
         "dependencies": {
+          "AutoMapper": "8.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.4"
         },
         "compile": {
@@ -5169,13 +5171,13 @@
     }
   },
   "libraries": {
-    "Article.Framework/1.0.3": {
-      "sha512": "axr3n/+4tKz8Dw/vHrVhAOr4TlRRCy+jN70GIYwK7YqjqyFWr6YU8ggxuiEi5sBVaDAtcHZopZugSfS9gTJkdQ==",
+    "Article.Framework/1.0.9": {
+      "sha512": "7mbD66B4N+NgjJMN8TKpIMk6OVu2vJMu7qvUKB92MrCGf7thbiulGDTFdPQlmz+JzGYe7wfYyKyGkLt+D0klKg==",
       "type": "package",
-      "path": "article.framework/1.0.3",
+      "path": "article.framework/1.0.9",
       "files": [
         ".nupkg.metadata",
-        "article.framework.1.0.3.nupkg.sha512",
+        "article.framework.1.0.9.nupkg.sha512",
         "article.framework.nuspec",
         "lib/netstandard2.0/Article.Framework.dll"
       ]
@@ -14058,7 +14060,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "Article.Framework >= 1.0.3",
+      "Article.Framework >= 1.0.9",
       "Microsoft.ApplicationInsights.AspNetCore >= 2.2.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
@@ -14114,7 +14116,7 @@
         "dependencies": {
           "Article.Framework": {
             "target": "Package",
-            "version": "[1.0.3, )"
+            "version": "[1.0.9, )"
           },
           "Microsoft.ApplicationInsights.AspNetCore": {
             "target": "Package",

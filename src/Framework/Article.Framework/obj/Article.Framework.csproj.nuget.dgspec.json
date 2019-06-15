@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\Workspace\\webAPI\\src\\Framework\\Article.Framework\\Article.Framework.csproj": {
-      "version": "1.0.3",
+      "version": "1.0.9",
       "restore": {
         "projectUniqueName": "D:\\Workspace\\webAPI\\src\\Framework\\Article.Framework\\Article.Framework.csproj",
         "projectName": "Article.Framework",
@@ -44,6 +44,14 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[2.2.4, )"

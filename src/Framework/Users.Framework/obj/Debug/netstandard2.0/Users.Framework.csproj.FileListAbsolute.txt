@@ -10,9 +10,9 @@ F:\workspace\API\API\src\Framework\Users.Framework\obj\Debug\netstandard2.0\User
 D:\Workspace\webAPI\src\Framework\Users.Framework\bin\Debug\netstandard2.0\Users.Framework.deps.json
 D:\Workspace\webAPI\src\Framework\Users.Framework\bin\Debug\netstandard2.0\Users.Framework.dll
 D:\Workspace\webAPI\src\Framework\Users.Framework\bin\Debug\netstandard2.0\Users.Framework.pdb
+D:\Workspace\webAPI\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.csprojAssemblyReference.cache
 D:\Workspace\webAPI\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.csproj.CoreCompileInputs.cache
 D:\Workspace\webAPI\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.AssemblyInfoInputs.cache
 D:\Workspace\webAPI\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.AssemblyInfo.cs
 D:\Workspace\webAPI\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.dll
 D:\Workspace\webAPI\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.pdb
-D:\Workspace\webAPI\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.csprojAssemblyReference.cache

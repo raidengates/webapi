@@ -24,7 +24,7 @@
     ".NETCoreApp,Version=v2.2": {
       "Article.WebAPI/1.0.0": {
         "dependencies": {
-          "Article.Framework": "1.0.3",
+          "Article.Framework": "1.0.9",
           "Microsoft.ApplicationInsights.AspNetCore": "2.2.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
@@ -40,14 +40,16 @@
           "Article.WebAPI.dll": {}
         }
       },
-      "Article.Framework/1.0.3": {
+      "Article.Framework/1.0.9": {
         "dependencies": {
+          "AutoMapper": "8.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.4"
         },
         "runtime": {
           "lib/netstandard2.0/Article.Framework.dll": {
-            "assemblyVersion": "1.0.3.0",
-            "fileVersion": "1.0.3.0"
+            "assemblyVersion": "1.0.9.0",
+            "fileVersion": "1.0.9.0"
           }
         },
         "compile": {
@@ -3927,12 +3929,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Article.Framework/1.0.3": {
+    "Article.Framework/1.0.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-axr3n/+4tKz8Dw/vHrVhAOr4TlRRCy+jN70GIYwK7YqjqyFWr6YU8ggxuiEi5sBVaDAtcHZopZugSfS9gTJkdQ==",
-      "path": "article.framework/1.0.3",
-      "hashPath": "article.framework.1.0.3.nupkg.sha512"
+      "sha512": "sha512-7mbD66B4N+NgjJMN8TKpIMk6OVu2vJMu7qvUKB92MrCGf7thbiulGDTFdPQlmz+JzGYe7wfYyKyGkLt+D0klKg==",
+      "path": "article.framework/1.0.9",
+      "hashPath": "article.framework.1.0.9.nupkg.sha512"
     },
     "AutoMapper/8.0.0": {
       "type": "package",

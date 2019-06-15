@@ -42,13 +42,13 @@ D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\obj\Debug\netcoreapp2.2\
 D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\obj\Debug\netcoreapp2.2\Article.WebAPI.AssemblyInfo.cs
 D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
 D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\bin\Debug\netcoreapp2.2\appsettings.json
-D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
 D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\bin\Debug\netcoreapp2.2\libman.json
+D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
 D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\bin\Debug\netcoreapp2.2\Article.WebAPI.deps.json
 D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\bin\Debug\netcoreapp2.2\Article.WebAPI.runtimeconfig.json
 D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\bin\Debug\netcoreapp2.2\Article.WebAPI.runtimeconfig.dev.json
 D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\bin\Debug\netcoreapp2.2\Article.WebAPI.dll
-D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\obj\Debug\netcoreapp2.2\Article.WebAPI.RazorTargetAssemblyInfo.cache
 D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\bin\Debug\netcoreapp2.2\Article.WebAPI.pdb
+D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\obj\Debug\netcoreapp2.2\Article.WebAPI.RazorTargetAssemblyInfo.cache
 D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\obj\Debug\netcoreapp2.2\Article.WebAPI.dll
 D:\Workspace\webAPI\src\Services\Article\Article.WebAPI\obj\Debug\netcoreapp2.2\Article.WebAPI.pdb

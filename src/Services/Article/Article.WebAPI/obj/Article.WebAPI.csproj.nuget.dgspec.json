@@ -46,7 +46,7 @@
           "dependencies": {
             "Article.Framework": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[1.0.9, )"
             },
             "Microsoft.ApplicationInsights.AspNetCore": {
               "target": "Package",
