@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\workspace\\API\\API\\src\\App\\Article.WebApp\\Article.WebApp.csproj": {}
+    "D:\\Workspace\\webAPI\\src\\App\\Article.WebApp\\Article.WebApp.csproj": {}
   },
   "projects": {
-    "F:\\workspace\\API\\API\\src\\App\\Article.WebApp\\Article.WebApp.csproj": {
+    "D:\\Workspace\\webAPI\\src\\App\\Article.WebApp\\Article.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\workspace\\API\\API\\src\\App\\Article.WebApp\\Article.WebApp.csproj",
+        "projectUniqueName": "D:\\Workspace\\webAPI\\src\\App\\Article.WebApp\\Article.WebApp.csproj",
         "projectName": "Article.WebApp",
-        "projectPath": "F:\\workspace\\API\\API\\src\\App\\Article.WebApp\\Article.WebApp.csproj",
-        "packagesPath": "C:\\Users\\graid\\.nuget\\packages\\",
-        "outputPath": "F:\\workspace\\API\\API\\src\\App\\Article.WebApp\\obj\\",
+        "projectPath": "D:\\Workspace\\webAPI\\src\\App\\Article.WebApp\\Article.WebApp.csproj",
+        "packagesPath": "C:\\Users\\Raiden PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\webAPI\\src\\App\\Article.WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\graid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Raiden PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,16 +25,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "F:\\workspace\\API\\API\\src\\Framework\\Article.Framework\\bin\\Debug": {},
-          "F:\\workspace\\API\\API\\src\\Framework\\Unititi.Framework\\bin\\Debug": {},
-          "F:\\workspace\\API\\API\\src\\Framework\\Users.Framework\\bin\\Debug": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "D:\\Workspace\\webAPI\\src\\Framework\\Article.Framework\\bin\\Debug": {},
+          "D:\\Workspace\\webAPI\\src\\Framework\\Unititi.Framework\\bin\\Debug": {},
+          "D:\\Workspace\\webAPI\\src\\Framework\\Users.Framework\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
@@ -68,10 +62,11 @@
               "target": "Package",
               "version": "[3.0.0-preview5.19227.9, )"
             },
-            "Microsoft.NETCore.Platforms": {
+            "Microsoft.NETCore.App": {
+              "include": "None",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview5.19224.8, )",
+              "version": "[3.0.0-preview6-27804-01, )",
               "autoReferenced": true
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
@@ -80,18 +75,19 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "none"
-            }
-          }
+          "frameworkReferences": [
+            "Microsoft.AspNetCore.App",
+            "Microsoft.NETCore.App"
+          ]
         }
       }
     }

@@ -7,3 +7,12 @@ F:\workspace\API\API\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Un
 F:\workspace\API\API\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.dll
 F:\workspace\API\API\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.pdb
 F:\workspace\API\API\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.csprojAssemblyReference.cache
+D:\Workspace\webAPI\src\Framework\Unititi.Framework\bin\Debug\netstandard2.0\Unititi.Framework.deps.json
+D:\Workspace\webAPI\src\Framework\Unititi.Framework\bin\Debug\netstandard2.0\Unititi.Framework.dll
+D:\Workspace\webAPI\src\Framework\Unititi.Framework\bin\Debug\netstandard2.0\Unititi.Framework.pdb
+D:\Workspace\webAPI\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.csprojAssemblyReference.cache
+D:\Workspace\webAPI\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.csproj.CoreCompileInputs.cache
+D:\Workspace\webAPI\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.AssemblyInfoInputs.cache
+D:\Workspace\webAPI\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.AssemblyInfo.cs
+D:\Workspace\webAPI\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.dll
+D:\Workspace\webAPI\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.pdb

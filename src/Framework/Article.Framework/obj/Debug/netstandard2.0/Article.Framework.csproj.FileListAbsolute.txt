@@ -25,3 +25,12 @@ F:\workspace\API\API\src\Framework\Article.Framework\obj\Debug\netstandard2.0\Ar
 F:\workspace\API\API\src\Framework\Article.Framework\obj\Debug\netstandard2.0\Article.Framework.AssemblyInfo.cs
 F:\workspace\API\API\src\Framework\Article.Framework\obj\Debug\netstandard2.0\Article.Framework.dll
 F:\workspace\API\API\src\Framework\Article.Framework\obj\Debug\netstandard2.0\Article.Framework.pdb
+D:\Workspace\webAPI\src\Framework\Article.Framework\bin\Debug\netstandard2.0\Article.Framework.deps.json
+D:\Workspace\webAPI\src\Framework\Article.Framework\bin\Debug\netstandard2.0\Article.Framework.dll
+D:\Workspace\webAPI\src\Framework\Article.Framework\bin\Debug\netstandard2.0\Article.Framework.pdb
+D:\Workspace\webAPI\src\Framework\Article.Framework\obj\Debug\netstandard2.0\Article.Framework.csprojAssemblyReference.cache
+D:\Workspace\webAPI\src\Framework\Article.Framework\obj\Debug\netstandard2.0\Article.Framework.csproj.CoreCompileInputs.cache
+D:\Workspace\webAPI\src\Framework\Article.Framework\obj\Debug\netstandard2.0\Article.Framework.AssemblyInfoInputs.cache
+D:\Workspace\webAPI\src\Framework\Article.Framework\obj\Debug\netstandard2.0\Article.Framework.AssemblyInfo.cs
+D:\Workspace\webAPI\src\Framework\Article.Framework\obj\Debug\netstandard2.0\Article.Framework.dll
+D:\Workspace\webAPI\src\Framework\Article.Framework\obj\Debug\netstandard2.0\Article.Framework.pdb

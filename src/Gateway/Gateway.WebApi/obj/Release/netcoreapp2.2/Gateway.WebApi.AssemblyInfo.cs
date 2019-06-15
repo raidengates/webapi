@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("61b435cc-8955-4181-85b3-a976e4b1e636")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("Gateway.WebApi")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Raiden Gates")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]

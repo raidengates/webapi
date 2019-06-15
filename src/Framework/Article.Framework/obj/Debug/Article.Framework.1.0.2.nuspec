@@ -14,6 +14,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="F:\workspace\API\API\src\Framework\Article.Framework\bin\Debug\netstandard2.0\Article.Framework.dll" target="lib\netstandard2.0\Article.Framework.dll" />
+    <file src="D:\Workspace\webAPI\src\Framework\Article.Framework\bin\Debug\netstandard2.0\Article.Framework.dll" target="lib\netstandard2.0\Article.Framework.dll" />
   </files>
 </package>
