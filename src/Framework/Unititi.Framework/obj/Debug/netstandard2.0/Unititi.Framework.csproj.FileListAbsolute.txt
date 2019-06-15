@@ -1,0 +1,9 @@
+F:\workspace\API\API\src\Framework\Unititi.Framework\bin\Debug\netstandard2.0\Unititi.Framework.deps.json
+F:\workspace\API\API\src\Framework\Unititi.Framework\bin\Debug\netstandard2.0\Unititi.Framework.dll
+F:\workspace\API\API\src\Framework\Unititi.Framework\bin\Debug\netstandard2.0\Unititi.Framework.pdb
+F:\workspace\API\API\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.csproj.CoreCompileInputs.cache
+F:\workspace\API\API\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.AssemblyInfoInputs.cache
+F:\workspace\API\API\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.AssemblyInfo.cs
+F:\workspace\API\API\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.dll
+F:\workspace\API\API\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.pdb
+F:\workspace\API\API\src\Framework\Unititi.Framework\obj\Debug\netstandard2.0\Unititi.Framework.csprojAssemblyReference.cache

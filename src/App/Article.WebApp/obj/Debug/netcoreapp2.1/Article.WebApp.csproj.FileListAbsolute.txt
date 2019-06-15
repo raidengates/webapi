@@ -1,0 +1,4 @@
+F:\workspace\API\src\App\Article.WebApp\obj\Debug\netcoreapp2.1\Article.WebApp.csprojAssemblyReference.cache
+F:\workspace\API\src\App\Article.WebApp\obj\Debug\netcoreapp2.1\Article.WebApp.csproj.CoreCompileInputs.cache
+F:\workspace\API\src\App\Article.WebApp\obj\Debug\netcoreapp2.1\Article.WebApp.AssemblyInfoInputs.cache
+F:\workspace\API\src\App\Article.WebApp\obj\Debug\netcoreapp2.1\Article.WebApp.AssemblyInfo.cs

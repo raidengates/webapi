@@ -1,0 +1,9 @@
+F:\workspace\API\API\src\Framework\Users.Framework\bin\Debug\netstandard2.0\Users.Framework.deps.json
+F:\workspace\API\API\src\Framework\Users.Framework\bin\Debug\netstandard2.0\Users.Framework.dll
+F:\workspace\API\API\src\Framework\Users.Framework\bin\Debug\netstandard2.0\Users.Framework.pdb
+F:\workspace\API\API\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.csprojAssemblyReference.cache
+F:\workspace\API\API\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.csproj.CoreCompileInputs.cache
+F:\workspace\API\API\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.AssemblyInfoInputs.cache
+F:\workspace\API\API\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.AssemblyInfo.cs
+F:\workspace\API\API\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.dll
+F:\workspace\API\API\src\Framework\Users.Framework\obj\Debug\netstandard2.0\Users.Framework.pdb

@@ -1,0 +1,11 @@
+D:\Workspace\API\src\Framework\Identity.Framework\bin\Debug\netcoreapp2.2\Identity.Framework.deps.json
+D:\Workspace\API\src\Framework\Identity.Framework\bin\Debug\netcoreapp2.2\Identity.Framework.dll
+D:\Workspace\API\src\Framework\Identity.Framework\obj\Debug\netcoreapp2.2\Identity.Framework.csproj.CoreCompileInputs.cache
+D:\Workspace\API\src\Framework\Identity.Framework\obj\Debug\netcoreapp2.2\Identity.Framework.AssemblyInfoInputs.cache
+D:\Workspace\API\src\Framework\Identity.Framework\obj\Debug\netcoreapp2.2\Identity.Framework.AssemblyInfo.cs
+D:\Workspace\API\src\Framework\Identity.Framework\bin\Debug\netcoreapp2.2\Identity.Framework.runtimeconfig.json
+D:\Workspace\API\src\Framework\Identity.Framework\bin\Debug\netcoreapp2.2\Identity.Framework.runtimeconfig.dev.json
+D:\Workspace\API\src\Framework\Identity.Framework\obj\Debug\netcoreapp2.2\Identity.Framework.csprojAssemblyReference.cache
+D:\Workspace\API\src\Framework\Identity.Framework\bin\Debug\netcoreapp2.2\Identity.Framework.pdb
+D:\Workspace\API\src\Framework\Identity.Framework\obj\Debug\netcoreapp2.2\Identity.Framework.dll
+D:\Workspace\API\src\Framework\Identity.Framework\obj\Debug\netcoreapp2.2\Identity.Framework.pdb
