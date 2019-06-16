@@ -9,6 +9,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Article.WebApp.Data;
+using Blazorise;
+using Blazorise.Bootstrap;
+using Blazorise.Icons.Material;
+using Blazorise.Material;
 
 namespace Article.WebApp
 {
@@ -21,6 +25,12 @@ namespace Article.WebApp
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+
+            services.AddBlazorise(options =>
+            {
+                options.ChangeTextOnKeyPress = true; // optional
+            }).AddMaterialProviders().AddMaterialIcons();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,7 +45,10 @@ namespace Article.WebApp
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            app.UseMaterialProviders().UseMaterialIcons();
 
+            //app.AddComponent<App>("app");
+            
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();

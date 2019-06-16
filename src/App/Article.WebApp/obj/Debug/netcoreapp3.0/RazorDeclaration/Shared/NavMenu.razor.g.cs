@@ -43,6 +43,11 @@ using Article.WebApp.Shared;
 
 #line default
 #line hidden
+#line 7 "D:\Workspace\webAPI\src\App\Article.WebApp\_Imports.razor"
+using Blazorise;
+
+#line default
+#line hidden
     public class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

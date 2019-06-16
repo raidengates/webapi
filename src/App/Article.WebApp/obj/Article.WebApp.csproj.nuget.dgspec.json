@@ -44,6 +44,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Blazorise.Icons.Material": {
+              "target": "Package",
+              "version": "[0.7.7, )"
+            },
+            "Blazorise.Material": {
+              "target": "Package",
+              "version": "[0.7.7, )"
+            },
             "Microsoft.AspNet.WebApi.Client": {
               "target": "Package",
               "version": "[5.2.7, )"
@@ -72,6 +80,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.0.0-preview5-19264-04, )"
+            },
+            "Syncfusion.EJ2.AspNet.Core.RazorComponents": {
+              "target": "Package",
+              "version": "[17.1.0.51-beta, )"
             }
           },
           "imports": [

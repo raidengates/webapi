@@ -44,6 +44,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Blazorise.Material": {
+              "target": "Package",
+              "version": "[0.7.7, )"
+            },
             "Microsoft.ApplicationInsights.AspNetCore": {
               "target": "Package",
               "version": "[2.2.0, )"

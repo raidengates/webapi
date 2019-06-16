@@ -39,6 +39,11 @@ using Article.WebApp.Shared;
 
 #line default
 #line hidden
+#line 7 "D:\Workspace\webAPI\src\App\Article.WebApp\_Imports.razor"
+using Blazorise;
+
+#line default
+#line hidden
 #line 2 "D:\Workspace\webAPI\src\App\Article.WebApp\Pages\FetchData.razor"
 using Article.WebApp.Data;
 
