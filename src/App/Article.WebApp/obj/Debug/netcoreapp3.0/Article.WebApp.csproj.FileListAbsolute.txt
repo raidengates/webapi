@@ -559,3 +559,5 @@ D:\Workspace\webAPI\src\App\Article.WebApp\obj\Debug\netcoreapp3.0\Razor\Pages\_
 D:\Workspace\webAPI\src\App\Article.WebApp\obj\Debug\netcoreapp3.0\Razor\Shared\MainLayout.razor.g.cs
 D:\Workspace\webAPI\src\App\Article.WebApp\obj\Debug\netcoreapp3.0\Razor\Shared\NavMenu.razor.g.cs
 D:\Workspace\webAPI\src\App\Article.WebApp\obj\Debug\netcoreapp3.0\Razor\_Imports.razor.g.cs
+D:\workspace\webapi\src\App\Article.WebApp\obj\Debug\netcoreapp3.0\RazorDeclaration\Shared\FooterMenu.razor.g.cs
+D:\workspace\webapi\src\App\Article.WebApp\obj\Debug\netcoreapp3.0\Razor\Shared\FooterMenu.razor.g.cs

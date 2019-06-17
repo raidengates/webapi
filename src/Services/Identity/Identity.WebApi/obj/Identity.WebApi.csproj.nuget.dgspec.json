@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\webAPI\\src\\Services\\Identity\\Identity.WebApi\\Identity.WebApi.csproj": {}
+    "D:\\workspace\\webapi\\src\\Services\\Identity\\Identity.WebApi\\Identity.WebApi.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\webAPI\\src\\Services\\Identity\\Identity.WebApi\\Identity.WebApi.csproj": {
+    "D:\\workspace\\webapi\\src\\Services\\Identity\\Identity.WebApi\\Identity.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\webAPI\\src\\Services\\Identity\\Identity.WebApi\\Identity.WebApi.csproj",
+        "projectUniqueName": "D:\\workspace\\webapi\\src\\Services\\Identity\\Identity.WebApi\\Identity.WebApi.csproj",
         "projectName": "Identity.WebApi",
-        "projectPath": "D:\\Workspace\\webAPI\\src\\Services\\Identity\\Identity.WebApi\\Identity.WebApi.csproj",
-        "packagesPath": "C:\\Users\\Raiden PC\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\webAPI\\src\\Services\\Identity\\Identity.WebApi\\obj\\",
+        "projectPath": "D:\\workspace\\webapi\\src\\Services\\Identity\\Identity.WebApi\\Identity.WebApi.csproj",
+        "packagesPath": "C:\\Users\\graid\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\webapi\\src\\Services\\Identity\\Identity.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Raiden PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\graid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,9 +25,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\Workspace\\webAPI\\src\\Framework\\Article.Framework\\bin\\Debug": {},
-          "D:\\Workspace\\webAPI\\src\\Framework\\Unititi.Framework\\bin\\Debug": {},
-          "D:\\Workspace\\webAPI\\src\\Framework\\Users.Framework\\bin\\Debug": {},
+          "D:\\workspace\\webapi\\src\\Framework\\Article.Framework\\bin\\Debug": {},
+          "D:\\workspace\\webapi\\src\\Framework\\Unititi.Framework\\bin\\Debug": {},
+          "D:\\workspace\\webapi\\src\\Framework\\Users.Framework\\bin\\Debug": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,10 +44,6 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
-            "Blazorise.Material": {
-              "target": "Package",
-              "version": "[0.7.7, )"
-            },
             "Microsoft.ApplicationInsights.AspNetCore": {
               "target": "Package",
               "version": "[2.2.0, )"

@@ -50,9 +50,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Framework", "src\Fra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "www", "www", "{FCADD015-6854-42E1-96B6-25C56550032A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Components", "src\App\Components\Components.csproj", "{8D6B34F6-4024-4B2C-AC9B-108A7D55B753}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Components", "src\App\Components\Components.csproj", "{8D6B34F6-4024-4B2C-AC9B-108A7D55B753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentsLibrary", "src\App\ComponentsLibrary\ComponentsLibrary.csproj", "{9FB237CF-75CB-4B4A-87FE-0945F02F462B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentsLibrary", "src\App\ComponentsLibrary\ComponentsLibrary.csproj", "{9FB237CF-75CB-4B4A-87FE-0945F02F462B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

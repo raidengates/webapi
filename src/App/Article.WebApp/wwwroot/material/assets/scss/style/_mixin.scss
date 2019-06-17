@@ -1,0 +1,31 @@
+@mixin center {
+    @media (min-width: $breakpointMenu) {
+      max-width: $baseWidth;
+      // min-width: $breakpoint1;
+    }
+    margin: 0 auto;
+    @include sp {
+      width: auto;
+    }
+    @content;
+}
+
+//============================================
+// clearfix
+//============================================
+@mixin clear {
+    *zoom: 1;
+    &:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+//============================================
+// breakpoint
+//============================================
+@mixin sp {
+    @media screen and (max-width: #{$breakpointMenu}) {
+      @content;
+    }
+  }

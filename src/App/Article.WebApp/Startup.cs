@@ -25,10 +25,9 @@ namespace Article.WebApp
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
-
-            services.AddBlazorise(options =>
-            {
-                options.ChangeTextOnKeyPress = true; // optional
+           
+            services.AddBlazorise(options => {
+                options.ChangeTextOnKeyPress = true;
             }).AddMaterialProviders().AddMaterialIcons();
 
         }
@@ -36,6 +35,7 @@ namespace Article.WebApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseMaterialProviders().UseMaterialIcons();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -45,9 +45,6 @@ namespace Article.WebApp
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseMaterialProviders().UseMaterialIcons();
-
-            //app.AddComponent<App>("app");
             
             app.UseHttpsRedirection();
 

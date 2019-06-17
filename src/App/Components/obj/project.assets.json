@@ -30,12 +30,11 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "ClEhNHi8QhVOm5FYs5mE4dEqIKSzjQpIpLM5O3mt+6MkCdGfEiOztIJUnAaqvR+eitXI00kop5b9V/DjwhCwew==",
+      "sha512": "C4TTcGMlyD3B7pxGx3zPpqEg/VBzeeWnJ3y0RVjrUy2pCOIGpmoQmGUBAv6AqX7YlLzLQ7UEVHn/MpOdYkfNUg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -179,23 +178,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Raiden PC\\.nuget\\packages\\": {},
+    "C:\\Users\\graid\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\webAPI\\src\\App\\Components\\Components.csproj",
+      "projectUniqueName": "D:\\workspace\\webapi\\src\\App\\Components\\Components.csproj",
       "projectName": "Components",
-      "projectPath": "D:\\Workspace\\webAPI\\src\\App\\Components\\Components.csproj",
-      "packagesPath": "C:\\Users\\Raiden PC\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\webAPI\\src\\App\\Components\\obj\\",
+      "projectPath": "D:\\workspace\\webapi\\src\\App\\Components\\Components.csproj",
+      "packagesPath": "C:\\Users\\graid\\.nuget\\packages\\",
+      "outputPath": "D:\\workspace\\webapi\\src\\App\\Components\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Raiden PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\graid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -203,9 +202,9 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\Workspace\\webAPI\\src\\Framework\\Article.Framework\\bin\\Debug": {},
-        "D:\\Workspace\\webAPI\\src\\Framework\\Unititi.Framework\\bin\\Debug": {},
-        "D:\\Workspace\\webAPI\\src\\Framework\\Users.Framework\\bin\\Debug": {},
+        "D:\\workspace\\webapi\\src\\Framework\\Article.Framework\\bin\\Debug": {},
+        "D:\\workspace\\webapi\\src\\Framework\\Unititi.Framework\\bin\\Debug": {},
+        "D:\\workspace\\webapi\\src\\Framework\\Users.Framework\\bin\\Debug": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
