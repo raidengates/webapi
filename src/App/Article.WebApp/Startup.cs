@@ -13,19 +13,30 @@ using Blazorise;
 using Blazorise.Bootstrap;
 using Blazorise.Icons.Material;
 using Blazorise.Material;
-
+using Microsoft.Extensions.Configuration;
+using Article.WebApp.Domain;
 namespace Article.WebApp
 {
     public class Startup
     {
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public IConfiguration Configuration { get; }
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
-           
+
+            services.AddSingleton<LoginService>();
+            IConfigurationSection appGateway = Configuration.GetSection("AppSettings");
+
+            services.Configure<Gateway>(appGateway);
+
             services.AddBlazorise(options => {
                 options.ChangeTextOnKeyPress = true;
             }).AddMaterialProviders().AddMaterialIcons();
@@ -49,6 +60,7 @@ namespace Article.WebApp
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
+           
 
             app.UseRouting();
 
@@ -57,6 +69,7 @@ namespace Article.WebApp
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
             });
+            //app.UseMvc();
         }
     }
 }

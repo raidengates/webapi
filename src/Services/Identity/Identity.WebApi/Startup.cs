@@ -38,10 +38,8 @@ namespace Identity.WebApi
         {
             services.AddUsersFramework(Configuration);
             services.AddUnititiFramework(Configuration);
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddScoped<ExceptionHandlerMiddleware>();
-
             IConfigurationSection appSettingSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingSection);
             services.AddScoped<HashEncrypt>();

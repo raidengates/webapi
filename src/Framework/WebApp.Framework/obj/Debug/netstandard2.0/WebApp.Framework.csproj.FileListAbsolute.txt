@@ -1,6 +1,9 @@
 D:\Workspace\webAPI\src\Framework\WebApp.Framework\bin\Debug\netstandard2.0\WebApp.Framework.deps.json
 D:\Workspace\webAPI\src\Framework\WebApp.Framework\bin\Debug\netstandard2.0\WebApp.Framework.dll
-D:\Workspace\webAPI\src\Framework\WebApp.Framework\obj\Debug\netstandard2.0\WebApp.Framework.csprojAssemblyReference.cache
+D:\Workspace\webAPI\src\Framework\WebApp.Framework\bin\Debug\netstandard2.0\WebApp.Framework.pdb
 D:\Workspace\webAPI\src\Framework\WebApp.Framework\obj\Debug\netstandard2.0\WebApp.Framework.csproj.CoreCompileInputs.cache
 D:\Workspace\webAPI\src\Framework\WebApp.Framework\obj\Debug\netstandard2.0\WebApp.Framework.AssemblyInfoInputs.cache
 D:\Workspace\webAPI\src\Framework\WebApp.Framework\obj\Debug\netstandard2.0\WebApp.Framework.AssemblyInfo.cs
+D:\Workspace\webAPI\src\Framework\WebApp.Framework\obj\Debug\netstandard2.0\WebApp.Framework.dll
+D:\Workspace\webAPI\src\Framework\WebApp.Framework\obj\Debug\netstandard2.0\WebApp.Framework.pdb
+D:\Workspace\webAPI\src\Framework\WebApp.Framework\obj\Debug\netstandard2.0\WebApp.Framework.csprojAssemblyReference.cache

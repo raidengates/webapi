@@ -15,15 +15,9 @@ namespace Article.Framework.Extensions
         {
             // Service
             services.AddScoped<ICategoryServices, CategoryServices>();
-
             // Mappers
             services.AddAutoMapper(x => x.AddProfile(new MappingProfile()));
-
-
             services.AddDbContext<ArtDBContext>(options => options.UseSqlServer(configuration.GetConnectionString("SqlServerConnection")));
-
-           
-
             return services;
         }
     }

@@ -1,6 +1,36 @@
 ﻿@page "/login"
+@using Article.WebApp.Data
+@using Article.WebApp.Domain
+@inject LoginService _LoginService
 
-<h1>Login</h1>
-<p>This component demonstrates fetching data from a service.</p>
+<form>
 
+    <div>@_gateway</div>
+
+
+    <div class="form-group">
+        <label for="txt_username">Tên đăng nhập</label>
+        <input type="email" class="form-control" id="txt_username" aria-describedby="emailHelp" placeholder="Tên đăng nhập">
+    </div>
+    <div class="form-group">
+        <label for="txt_password">Password</label>
+        <input type="password" class="form-control" id="txt_password" placeholder="Password">
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="ck_save_login">
+        <label class="form-check-label" for="exampleCheck1">Ghi nhớ đăng nhập</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+</form>
+
+@functions{
+    string _gateway;
+    protected override async Task OnInitAsync()
+    {
+        _gateway = await _LoginService.GetGateway();
+
+    }
+
+
+}
 
