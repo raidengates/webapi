@@ -1,36 +1,56 @@
 ﻿@page "/login"
 @using Article.WebApp.Data
 @using Article.WebApp.Domain
+@using Microsoft.Extensions.Configuration
 @inject LoginService _LoginService
 
-<form>
 
-    <div>@_gateway</div>
+<div>@_gateway</div>
 
 
-    <div class="form-group">
+<section class="u-center  shadow-sm p-3 mb-5 bg-white rounded">
+    <div class="form-group ">
         <label for="txt_username">Tên đăng nhập</label>
-        <input type="email" class="form-control" id="txt_username" aria-describedby="emailHelp" placeholder="Tên đăng nhập">
+        <input id="txt_username" class="form-control" type="text" @bind="MyUsername"></input>
     </div>
-    <div class="form-group">
-        <label for="txt_password">Password</label>
-        <input type="password" class="form-control" id="txt_password" placeholder="Password">
+
+    <div class="form-group ">
+        <label for="txt_password">Mật khẩu</label>
+        <input id="txt_password" class="form-control" type="text" @bind="MyPassword"></input>
     </div>
-    <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="ck_save_login">
-        <label class="form-check-label" for="exampleCheck1">Ghi nhớ đăng nhập</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Đăng nhập</button>
-</form>
+
+    <button type="submit" onclick="@Event_Login" class="btn btn-primary">Đăng nhập</button>
+</section>
+
+
+
 
 @functions{
     string _gateway;
+    public string MyPassword { get; set; }
+    public string MyUsername { get; set; }
+    public string MyResult = string.Empty;
+
+    IConfiguration _configuration;
+
+    Gateway _gate;
     protected override async Task OnInitAsync()
     {
-        _gateway = await _LoginService.GetGateway();
-
+        
+        _gateway = _gate.Host;
     }
 
-
+    protected void Event_Login()
+    {
+        MyResult = MyUsername;
+    }
+    void OnPasswordChange(string value)
+    {
+        MyPassword = value;
+    }
+    void OnUsernameChange(string value)
+    {
+        MyUsername = value;
+    }
 }
 

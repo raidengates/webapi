@@ -1,32 +1,44 @@
-    <Bar Breakpoint="Breakpoint.Desktop" Background="Background.Light" Theme="Theme.Light">
-        <BarBrand>
-            Shee
-        </BarBrand>
-        <BarToggler>
-        </BarToggler>
-        <BarMenu Class="l-container">
-            <BarStart>
-                <BarItem>
-                    <BarLink To="/">Home</BarLink>
-                </BarItem>
-                <BarItem>
-                    <BarLink To="counter">Counter</BarLink>
-                </BarItem>
-                <BarItem>
-                    <BarLink To="fetchdata">Fetch data</BarLink>
-                </BarItem>
-            </BarStart>
-            <BarEnd>
-                <BarItem>
-                    <SimpleButton Color="Color.Primary">Sign up</SimpleButton>
-                    <SimpleButton Color="Color.Secondary">Log in</SimpleButton>
-                </BarItem>
-            </BarEnd>
-        </BarMenu>
-    </Bar>
+@using Microsoft.AspNetCore.Blazor.Services
+@inject IUriHelper urihelper
 
-   
+
+<Bar Breakpoint="Breakpoint.Desktop" Background="Background.Light" Theme="Theme.Light">
+    <BarBrand>
+        Shee
+    </BarBrand>
+    <BarToggler>
+    </BarToggler>
+    <BarMenu Class="l-container">
+        <BarStart>
+            <BarItem>
+                <BarLink To="/">Home</BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="counter">Counter</BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="fetchdata">Fetch data</BarLink>
+            </BarItem>
+        </BarStart>
+        <BarEnd>
+            <BarItem>
+                <SimpleButton  Clicked="@Event_SignUp" Color="Color.Primary">Sign up</SimpleButton>
+                <SimpleButton Clicked="@Event_Login" Color="Color.Secondary">Log in</SimpleButton>
+            </BarItem>
+        </BarEnd>
+    </BarMenu>
+</Bar>
+
+
 
 @functions {
+    void Event_SignUp()
+    {
+
+    }
+    void Event_Login()
+    {
+        urihelper.NavigateTo("/login");
+    }
 
 }

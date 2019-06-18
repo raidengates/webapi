@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\webAPI\\src\\Framework\\Users.Framework\\Users.Framework.csproj": {}
+    "D:\\workspace\\webapi\\src\\Framework\\Users.Framework\\Users.Framework.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\webAPI\\src\\Framework\\Users.Framework\\Users.Framework.csproj": {
+    "D:\\workspace\\webapi\\src\\Framework\\Users.Framework\\Users.Framework.csproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\webAPI\\src\\Framework\\Users.Framework\\Users.Framework.csproj",
+        "projectUniqueName": "D:\\workspace\\webapi\\src\\Framework\\Users.Framework\\Users.Framework.csproj",
         "projectName": "Users.Framework",
-        "projectPath": "D:\\Workspace\\webAPI\\src\\Framework\\Users.Framework\\Users.Framework.csproj",
-        "packagesPath": "C:\\Users\\Raiden PC\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\webAPI\\src\\Framework\\Users.Framework\\obj\\",
+        "projectPath": "D:\\workspace\\webapi\\src\\Framework\\Users.Framework\\Users.Framework.csproj",
+        "packagesPath": "C:\\Users\\graid\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\webapi\\src\\Framework\\Users.Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Raiden PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\graid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,10 +25,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\Workspace\\webAPI\\src\\Framework\\Article.Framework\\bin\\Debug": {},
-          "D:\\Workspace\\webAPI\\src\\Framework\\Unititi.Framework\\bin\\Debug": {},
-          "D:\\Workspace\\webAPI\\src\\Framework\\Users.Framework\\bin\\Debug": {},
-          "D:\\Workspace\\webAPI\\src\\Framework\\WebApp.Framework\\bin\\Debug": {},
+          "D:\\workspace\\webapi\\src\\Framework\\Article.Framework\\bin\\Debug": {},
+          "D:\\workspace\\webapi\\src\\Framework\\Unititi.Framework\\bin\\Debug": {},
+          "D:\\workspace\\webapi\\src\\Framework\\Users.Framework\\bin\\Debug": {},
+          "D:\\workspace\\webapi\\src\\Framework\\WebApp.Framework\\bin\\Debug": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

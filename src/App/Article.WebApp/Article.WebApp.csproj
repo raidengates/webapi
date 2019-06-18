@@ -6,6 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="configuration.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="configuration.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Blazorise.Icons.Material" Version="0.7.7" />
     <PackageReference Include="Blazorise.Material" Version="0.7.7" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />

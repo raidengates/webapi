@@ -13383,4 +13383,9 @@ a.text-light:active, a.text-light:focus, a.text-light:hover {
   cursor: pointer;
 }
 
+.u-center {
+  max-width: 500px;
+  margin: 15px auto;
+}
+
 /*# sourceMappingURL=material.css.map */

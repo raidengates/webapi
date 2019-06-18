@@ -15,11 +15,11 @@ namespace Article.WebApp.Data
 {
     public class LoginService : ControllerBase
     {
-       
-
+     
+        
         public  Task<string> GetGateway()
         {
-            return  Task.FromResult("afsdaf");
+            return  Task.FromResult("");
         }
 
 

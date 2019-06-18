@@ -1,0 +1,7 @@
+{
+    "Gateway": {
+        "DownstreamScheme": "http",
+        "Host": "localhost",
+        "Port": "1"
+    }
+}
