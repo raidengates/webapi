@@ -47,7 +47,6 @@ D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\ru
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\obj\Debug\netcoreapp3.0\Blazor.Server.RazorTargetAssemblyInfo.cache
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\obj\Debug\netcoreapp3.0\Blazor.Server.csproj.CopyComplete
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Blazor.Shared.dll
-D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Blazor.Client.blazor.config
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Blazor.Server.StaticWebAssets.xml
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Blazor.Server.deps.json
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Blazor.Server.runtimeconfig.json
@@ -65,4 +64,5 @@ D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Bl
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Blazorise.Icons.Material.dll
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Blazorise.Material.dll
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Blazorise.Sidebar.dll
-D:\workspace\webapi\src\App\BlazorWithIdentity.Server\obj\Debug\netcoreapp3.0\Blazor.Server.MvcApplicationPartsAssemblyInfo.cs
+D:\Workspace\webapi\src\App\BlazorWithIdentity.Server\obj\Debug\netcoreapp3.0\Blazor.Server.MvcApplicationPartsAssemblyInfo.cs
+D:\Workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Blazor.Client.blazor.config

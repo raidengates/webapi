@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Server\\Blazor.Server.csproj": {}
+    "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Server\\Blazor.Server.csproj": {}
   },
   "projects": {
-    "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\Blazor.Client.csproj": {
+    "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\Blazor.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\Blazor.Client.csproj",
+        "projectUniqueName": "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\Blazor.Client.csproj",
         "projectName": "Blazor.Client",
-        "projectPath": "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\Blazor.Client.csproj",
-        "packagesPath": "C:\\Users\\graid\\.nuget\\packages\\",
-        "outputPath": "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\obj\\",
+        "projectPath": "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\Blazor.Client.csproj",
+        "packagesPath": "C:\\Users\\Raiden PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\graid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Raiden PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,12 +25,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\bin\\Debug": {},
-          "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Shared\\bin\\Debug": {},
-          "D:\\workspace\\webapi\\src\\Framework\\Article.Framework\\bin\\Debug": {},
-          "D:\\workspace\\webapi\\src\\Framework\\Unititi.Framework\\bin\\Debug": {},
-          "D:\\workspace\\webapi\\src\\Framework\\Users.Framework\\bin\\Debug": {},
-          "D:\\workspace\\webapi\\src\\Framework\\WebApp.Framework\\bin\\Debug": {},
+          "D:\\Workspace\\webAPI\\src\\Framework\\Article.Framework\\bin\\Debug": {},
+          "D:\\Workspace\\webAPI\\src\\Framework\\Unititi.Framework\\bin\\Debug": {},
+          "D:\\Workspace\\webAPI\\src\\Framework\\Users.Framework\\bin\\Debug": {},
+          "D:\\Workspace\\webAPI\\src\\Framework\\WebApp.Framework\\bin\\Debug": {},
+          "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Shared\\bin\\Debug": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
           "https://dotnet.myget.org/F/blazor-dev/api/v3/index.json": {}
@@ -93,20 +92,20 @@
         }
       }
     },
-    "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Server\\Blazor.Server.csproj": {
+    "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Server\\Blazor.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Server\\Blazor.Server.csproj",
+        "projectUniqueName": "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Server\\Blazor.Server.csproj",
         "projectName": "Blazor.Server",
-        "projectPath": "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Server\\Blazor.Server.csproj",
-        "packagesPath": "C:\\Users\\graid\\.nuget\\packages\\",
-        "outputPath": "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Server\\obj\\",
+        "projectPath": "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Server\\Blazor.Server.csproj",
+        "packagesPath": "C:\\Users\\Raiden PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\graid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Raiden PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,12 +113,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\bin\\Debug": {},
-          "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Shared\\bin\\Debug": {},
-          "D:\\workspace\\webapi\\src\\Framework\\Article.Framework\\bin\\Debug": {},
-          "D:\\workspace\\webapi\\src\\Framework\\Unititi.Framework\\bin\\Debug": {},
-          "D:\\workspace\\webapi\\src\\Framework\\Users.Framework\\bin\\Debug": {},
-          "D:\\workspace\\webapi\\src\\Framework\\WebApp.Framework\\bin\\Debug": {},
+          "D:\\Workspace\\webAPI\\src\\Framework\\Article.Framework\\bin\\Debug": {},
+          "D:\\Workspace\\webAPI\\src\\Framework\\Unititi.Framework\\bin\\Debug": {},
+          "D:\\Workspace\\webAPI\\src\\Framework\\Users.Framework\\bin\\Debug": {},
+          "D:\\Workspace\\webAPI\\src\\Framework\\WebApp.Framework\\bin\\Debug": {},
+          "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Shared\\bin\\Debug": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
           "https://dotnet.myget.org/F/blazor-dev/api/v3/index.json": {}
@@ -127,8 +125,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\Blazor.Client.csproj": {
-                "projectPath": "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\Blazor.Client.csproj"
+              "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\Blazor.Client.csproj": {
+                "projectPath": "D:\\Workspace\\webapi\\src\\App\\BlazorWithIdentity.Client\\Blazor.Client.csproj"
               }
             }
           }
@@ -206,14 +204,10 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          }
+          "frameworkReferences": [
+            "Microsoft.AspNetCore.App",
+            "Microsoft.NETCore.App"
+          ]
         }
       }
     }
