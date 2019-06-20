@@ -1,0 +1,9 @@
+C:\Users\graid\Desktop\BlazorWithIdentity-master\BlazorWithIdentity-master\BlazorWithIdentity.Shared\bin\Debug\netstandard2.0\BlazorWithIdentity.Shared.deps.json
+C:\Users\graid\Desktop\BlazorWithIdentity-master\BlazorWithIdentity-master\BlazorWithIdentity.Shared\bin\Debug\netstandard2.0\BlazorWithIdentity.Shared.dll
+C:\Users\graid\Desktop\BlazorWithIdentity-master\BlazorWithIdentity-master\BlazorWithIdentity.Shared\bin\Debug\netstandard2.0\BlazorWithIdentity.Shared.pdb
+C:\Users\graid\Desktop\BlazorWithIdentity-master\BlazorWithIdentity-master\BlazorWithIdentity.Shared\obj\Debug\netstandard2.0\BlazorWithIdentity.Shared.csprojAssemblyReference.cache
+C:\Users\graid\Desktop\BlazorWithIdentity-master\BlazorWithIdentity-master\BlazorWithIdentity.Shared\obj\Debug\netstandard2.0\BlazorWithIdentity.Shared.csproj.CoreCompileInputs.cache
+C:\Users\graid\Desktop\BlazorWithIdentity-master\BlazorWithIdentity-master\BlazorWithIdentity.Shared\obj\Debug\netstandard2.0\BlazorWithIdentity.Shared.AssemblyInfoInputs.cache
+C:\Users\graid\Desktop\BlazorWithIdentity-master\BlazorWithIdentity-master\BlazorWithIdentity.Shared\obj\Debug\netstandard2.0\BlazorWithIdentity.Shared.AssemblyInfo.cs
+C:\Users\graid\Desktop\BlazorWithIdentity-master\BlazorWithIdentity-master\BlazorWithIdentity.Shared\obj\Debug\netstandard2.0\BlazorWithIdentity.Shared.dll
+C:\Users\graid\Desktop\BlazorWithIdentity-master\BlazorWithIdentity-master\BlazorWithIdentity.Shared\obj\Debug\netstandard2.0\BlazorWithIdentity.Shared.pdb

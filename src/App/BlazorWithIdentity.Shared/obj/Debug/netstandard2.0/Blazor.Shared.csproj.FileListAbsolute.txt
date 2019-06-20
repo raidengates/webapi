@@ -1,0 +1,9 @@
+D:\workspace\webapi\src\App\BlazorWithIdentity.Shared\bin\Debug\netstandard2.0\Blazor.Shared.deps.json
+D:\workspace\webapi\src\App\BlazorWithIdentity.Shared\bin\Debug\netstandard2.0\Blazor.Shared.dll
+D:\workspace\webapi\src\App\BlazorWithIdentity.Shared\bin\Debug\netstandard2.0\Blazor.Shared.pdb
+D:\workspace\webapi\src\App\BlazorWithIdentity.Shared\obj\Debug\netstandard2.0\Blazor.Shared.csprojAssemblyReference.cache
+D:\workspace\webapi\src\App\BlazorWithIdentity.Shared\obj\Debug\netstandard2.0\Blazor.Shared.csproj.CoreCompileInputs.cache
+D:\workspace\webapi\src\App\BlazorWithIdentity.Shared\obj\Debug\netstandard2.0\Blazor.Shared.AssemblyInfoInputs.cache
+D:\workspace\webapi\src\App\BlazorWithIdentity.Shared\obj\Debug\netstandard2.0\Blazor.Shared.AssemblyInfo.cs
+D:\workspace\webapi\src\App\BlazorWithIdentity.Shared\obj\Debug\netstandard2.0\Blazor.Shared.dll
+D:\workspace\webapi\src\App\BlazorWithIdentity.Shared\obj\Debug\netstandard2.0\Blazor.Shared.pdb

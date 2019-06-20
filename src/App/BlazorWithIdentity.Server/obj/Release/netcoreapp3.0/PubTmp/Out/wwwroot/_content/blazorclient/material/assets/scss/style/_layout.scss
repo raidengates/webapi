@@ -1,0 +1,26 @@
+.l-container {
+    @include center;
+    justify-content: space-between;
+    @media screen and (max-width: 1080px) and (min-width: 1000px) {
+        // margin: 0 20px;
+      }
+  }
+  .main{
+    min-height: 100vh;
+  }
+
+  .c-footer{
+      text-align: center;
+      padding: 20px;
+      .content{
+          span{
+            padding: 0 5px;
+            cursor: pointer;
+          }
+      }
+  }
+.u-center{
+  max-width: 500px;
+  margin: 15px auto;
+}
+

@@ -1,0 +1,51 @@
+﻿@using Microsoft.AspNetCore.Blazor.Services
+@inject IUriHelper urihelper
+
+@inject IdentityAuthenticationState state
+
+<Bar Breakpoint="Breakpoint.Desktop" Background="Background.Light" Theme="Theme.Light">
+    <BarBrand>
+        Shee
+    </BarBrand>
+    <BarToggler>
+    </BarToggler>
+    <BarMenu Class="l-container">
+        <BarStart>
+            <BarItem>
+                <BarLink To="/">Home</BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="counter">Counter</BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="fetchdata">Fetch data</BarLink>
+            </BarItem>
+        </BarStart>
+        <BarEnd>
+            <BarItem>
+
+                <SimpleButton Clicked="@Event_Logout" Color="Color.Secondary">Logout</SimpleButton>
+            </BarItem>
+        </BarEnd>
+    </BarMenu>
+</Bar>
+@functions {
+    [CascadingParameter]
+    Task<AuthenticationState> AuthenticationState { get; set; }
+    protected override async Task OnParametersSetAsync()
+    {
+        if (!(await AuthenticationState).User.Identity.IsAuthenticated)
+        {
+            urihelper.NavigateTo("/login");
+        }
+    }
+
+    async Task Event_Logout()
+    {
+        await state.Logout();
+        urihelper.NavigateTo("/login");
+    }
+
+}
+
+

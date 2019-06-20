@@ -1,0 +1,64 @@
+﻿@page "/register"
+@layout LoginLayout
+@inject IUriHelper uriHelper
+@inject IdentityAuthenticationState state
+
+<form class="u-center  shadow-sm p-3 mb-5 bg-white rounded form-signin" @onsubmit="@OnSubmit">
+    <h4 class="font-weight-normal text-center">Create Account</h4>
+     <div class="form-group ">
+ <label for="inputUsername" class="sr-only">User Name</label>
+    <input id="inputUsername" class="form-control" placeholder="Username" 
+    required autofocus @bind="@registerParameters.UserName" />
+     </div>
+   
+     <div class="form-group ">
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" 
+    required @bind="@registerParameters.Password" />
+     </div>
+
+ <div class="form-group ">
+ <label for="inputPasswordConfirm" class="sr-only">Password Confirmation</label>
+    <input type="password" id="inputPasswordConfirm" class="form-control" 
+    placeholder="Password Confirmation" required @bind="@registerParameters.PasswordConfirm" />
+ </div>
+   
+
+    <button class="btn btn-primary btn-block" type="submit">Create account</button>
+
+    <label class="text-danger">@error</label>
+    <NavLink href="login">
+        <h6 class="font-weight-normal text-center">Already have an account? Click here to login</h6>
+    </NavLink>
+</form>
+
+@functions{
+
+    RegisterParameters registerParameters { get; set; } = new RegisterParameters();
+    string error { get; set; }
+
+     [CascadingParameter]
+    Task<AuthenticationState> AuthenticationState { get; set; }
+        
+    protected override async Task OnParametersSetAsync()
+    {
+        if ((await AuthenticationState).User.Identity.IsAuthenticated)
+        {
+           uriHelper.NavigateTo("/");
+        }
+    }
+
+    async Task OnSubmit()
+    {
+        error = null;
+        try
+        {
+            await state.Register(registerParameters);
+            uriHelper.NavigateTo("/");
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+        }
+    }
+}
