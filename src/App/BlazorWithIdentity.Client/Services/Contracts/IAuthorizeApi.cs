@@ -12,5 +12,7 @@ namespace Blazor.Client.Services.Contracts
         Task<UserInfo> Register(RegisterParameters registerParameters);
         Task Logout();
         Task<UserInfo> GetUserInfo();
+
+        Task<string> cate();
     }
 }

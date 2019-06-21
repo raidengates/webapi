@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "Blazor.Shared/1.0.0": {
+      "Blazor.Shared/1.0.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "System.ComponentModel.Annotations": "4.6.0-preview6.19303.8"
@@ -33,7 +33,7 @@
     }
   },
   "libraries": {
-    "Blazor.Shared/1.0.0": {
+    "Blazor.Shared/1.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

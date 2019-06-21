@@ -10,6 +10,7 @@ namespace Unititi.Framework.Func
 {
     public class FuncIdentity : IFuncIdentity
     {
+
         public string CreateSecurityTokenDescriptor(IdentityModel _identityModel, byte[] SecretKey)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -42,8 +43,8 @@ namespace Unititi.Framework.Func
             if (authorizationHeader != null)
             {
                 var tokenHandler = new JwtSecurityTokenHandler();
-                var token = authorizationHeader.Split(' ')[1];
-                var paresedToken = tokenHandler.ReadJwtToken(token);
+                //var token = authorizationHeader.Split(')[1];
+                var paresedToken = tokenHandler.ReadJwtToken(authorizationHeader);
 
                 int o_AccountID = default(int);
                 int o_RoleID = default(int);

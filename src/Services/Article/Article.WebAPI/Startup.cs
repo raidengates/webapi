@@ -7,6 +7,7 @@ using Article.WebApi.Helpers;
 using Article.WebApi.Middlewares;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -35,7 +36,10 @@ namespace Article.WebAPI
             services.AddUsersFramework(Configuration);
             services.AddUnititiFramework(Configuration);
             services.AddScoped<ExceptionHandlerMiddleware>();
+            services.AddApplicationInsightsTelemetry(Configuration);
+            //services.AddScoped<HttpContextAccessor>();
             IConfigurationSection appSettingSection = Configuration.GetSection("AppSettings");
+
             services.Configure<AppSettings>(appSettingSection);
             //Service xữ lý nghiệp vụ 
 
@@ -46,7 +50,7 @@ namespace Article.WebAPI
             //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
         }
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory log)
         {
             if (env.IsDevelopment())
             {
@@ -56,6 +60,7 @@ namespace Article.WebAPI
             {
                 app.UseHsts();
             }
+            log.AddApplicationInsights(app.ApplicationServices, LogLevel.Information);
             app.UseMvc();
         }
     }

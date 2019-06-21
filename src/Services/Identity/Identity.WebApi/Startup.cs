@@ -33,7 +33,6 @@ namespace Identity.WebApi
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddUsersFramework(Configuration);
@@ -45,10 +44,8 @@ namespace Identity.WebApi
             services.AddScoped<HashEncrypt>();
             services.AddScoped<Identity.WebApi.Services.IIdentityService, Identity.WebApi.Services.IdentityService>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory log)
         {
             if (env.IsDevelopment())
@@ -57,7 +54,6 @@ namespace Identity.WebApi
             }
             else
             {
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
             log.AddApplicationInsights(app.ApplicationServices, LogLevel.Information);

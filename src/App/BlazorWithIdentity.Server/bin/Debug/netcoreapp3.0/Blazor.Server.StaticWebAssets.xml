@@ -1,3 +1,3 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="_content/blazorclient" Path="D:\Workspace\webapi\src\App\BlazorWithIdentity.Client\wwwroot\" />
+  <ContentRoot BasePath="_content/blazorclient" Path="D:\workspace\webapi\src\App\BlazorWithIdentity.Client\wwwroot\" />
 </StaticWebAssets>

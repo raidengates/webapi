@@ -15,4 +15,6 @@ namespace Blazor.Shared
 
         public bool RememberMe { get; set; }
     }
+
+
 }

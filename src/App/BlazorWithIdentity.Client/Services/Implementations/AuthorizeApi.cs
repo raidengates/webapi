@@ -25,9 +25,9 @@ namespace Blazor.Client.Services.Implementations
         {
             var stringContent = new StringContent(JsonSerializer.ToString(loginParameters), Encoding.UTF8, "application/json");
             var result = await _httpClient.PostAsync("api/Authorize/Login", stringContent);
-            if (result.StatusCode == System.Net.HttpStatusCode.BadRequest) throw new Exception(await result.Content.ReadAsStringAsync());
+            if (result.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                throw new Exception(await result.Content.ReadAsStringAsync());
             result.EnsureSuccessStatusCode();
-
             return JsonSerializer.Parse<UserInfo>(await result.Content.ReadAsStringAsync());
         }
 
@@ -50,6 +50,12 @@ namespace Blazor.Client.Services.Implementations
         public async Task<UserInfo> GetUserInfo()
         {
             var result = await _httpClient.GetJsonAsync<UserInfo>("api/Authorize/UserInfo");
+            return result;
+        }
+
+        public async Task<string> cate()
+        {
+            var result = await _httpClient.GetJsonAsync<string>("api/Authorize/cate");
             return result;
         }
     }

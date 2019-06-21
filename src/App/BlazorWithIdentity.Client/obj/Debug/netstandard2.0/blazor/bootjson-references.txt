@@ -3,8 +3,6 @@ Blazorise.Bootstrap.dll
 Blazorise.dll
 Blazorise.Icons.Material.dll
 Blazorise.Material.dll
-BlazorWithIdentity.Client.dll
-BlazorWithIdentity.Shared.dll
 Microsoft.AspNetCore.Authorization.dll
 Microsoft.AspNetCore.Blazor.dll
 Microsoft.AspNetCore.Components.Browser.dll
@@ -31,5 +29,3 @@ System.Runtime.CompilerServices.Unsafe.dll
 System.Text.Json.dll
 System.Threading.Tasks.Extensions.dll
 Blazor.Client.pdb
-BlazorWithIdentity.Client.pdb
-BlazorWithIdentity.Shared.pdb

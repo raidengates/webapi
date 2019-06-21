@@ -52,6 +52,11 @@ namespace Blazor.Client.States
             userInfo = await _authorizeApi.GetUserInfo();
             return userInfo;
         }
+        public async Task<string> cate()
+        {
+            var  result = await _authorizeApi.cate();
+            return result;
+        }
 
     }
 }
