@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Identity.Framework</id>
+    <version>1.0.0</version>
+    <authors>Identity.Framework</authors>
+    <owners>Identity.Framework</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="IdentityServer4" version="1.5.2" exclude="Build,Analyzers" />
+        <dependency id="IdentityServer4.AspNetIdentity" version="1.0.1" exclude="Build,Analyzers" />
+        <dependency id="IdentityServer4.EntityFramework" version="1.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Hosting" version="1.1.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Identity" version="1.1.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="1.1.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Design" version="1.1.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="1.1.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="1.1.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Workspace\webapi\src\Framework\Identity.Framework\bin\Debug\netstandard2.0\Identity.Framework.dll" target="lib\netstandard2.0\Identity.Framework.dll" />
+  </files>
+</package>
