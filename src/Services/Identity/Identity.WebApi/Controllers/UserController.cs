@@ -28,10 +28,16 @@ namespace Identity.WebApi.Controllers
         public IActionResult Authenticate([FromBody] Login loginParam)
         {
             var _context = _httpContextAccessor.HttpContext;
-            var token = _userService.Authenticate(loginParam.Username, loginParam.Password, _context);
-            if (token == null)
+            SecurityToken _securityToken = _userService.Authenticate(loginParam.Username, loginParam.Password, _context);
+            if (_securityToken == null)
                 return BadRequest(new { message = "Username or password is incorrect" });
-            return Ok(token);
+            var response = new
+            {
+                token = _securityToken.auth_token,
+                expires_in = (int)_securityToken.expirationTime.TotalSeconds
+            };
+
+            return Ok(response);
         }
 
 

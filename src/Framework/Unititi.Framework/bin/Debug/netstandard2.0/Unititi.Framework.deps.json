@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "Unititi.Framework/1.1.3": {
+      "Unititi.Framework/1.1.4": {
         "dependencies": {
           "AutoMapper": "8.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
@@ -1215,7 +1215,7 @@
     }
   },
   "libraries": {
-    "Unititi.Framework/1.1.3": {
+    "Unititi.Framework/1.1.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

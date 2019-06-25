@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 namespace Blazor.Server.Controllers
 {
     [Route("api/[controller]")]
-    [Authorize]
     public class SampleDataController : Controller
     {
         private static string[] Summaries = new[]

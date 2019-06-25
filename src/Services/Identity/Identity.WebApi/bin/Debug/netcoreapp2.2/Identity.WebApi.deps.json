@@ -29,7 +29,7 @@
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3",
-          "Unititi.Framework": "1.1.2",
+          "Unititi.Framework": "1.1.4",
           "Users.Framework": "1.1.0"
         },
         "runtime": {
@@ -765,7 +765,7 @@
           "System.Runtime.Handles": "4.3.0"
         }
       },
-      "Unititi.Framework/1.1.2": {
+      "Unititi.Framework/1.1.4": {
         "dependencies": {
           "AutoMapper": "8.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
@@ -777,8 +777,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/Unititi.Framework.dll": {
-            "assemblyVersion": "1.1.2.0",
-            "fileVersion": "1.1.2.0"
+            "assemblyVersion": "1.1.4.0",
+            "fileVersion": "1.1.4.0"
           }
         },
         "compile": {
@@ -4241,12 +4241,12 @@
       "path": "system.threading.threadpool/4.3.0",
       "hashPath": "system.threading.threadpool.4.3.0.nupkg.sha512"
     },
-    "Unititi.Framework/1.1.2": {
+    "Unititi.Framework/1.1.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZgxG6DEapdsv9vWD9f57fAKM5PiYBaaBo5ptfAHQgLn7tZK6t4PsOT6EudTar9CJ1ns+yZRdlcSwb6iAmA7DmA==",
-      "path": "unititi.framework/1.1.2",
-      "hashPath": "unititi.framework.1.1.2.nupkg.sha512"
+      "sha512": "sha512-2IHBQ6OvMGivpZWrAaUzggc5av2dbIbuE31estTKz0g99D52towHHY3ek5RO9JV9oDHtyCVAZFbSlB5Aa5CCJg==",
+      "path": "unititi.framework/1.1.4",
+      "hashPath": "unititi.framework.1.1.4.nupkg.sha512"
     },
     "Users.Framework/1.1.0": {
       "type": "package",

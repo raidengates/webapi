@@ -73,4 +73,10 @@ D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Mi
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\workspace\webapi\src\App\BlazorWithIdentity.Server\obj\Debug\netcoreapp3.0\Blazor.Server.MvcApplicationPartsAssemblyInfo.cs
+D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Blazor.Extensions.Storage.JS.dll
+D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Blazor.Extensions.Storage.dll
+D:\workspace\webapi\src\App\BlazorWithIdentity.Server\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Blazor.Browser.dll

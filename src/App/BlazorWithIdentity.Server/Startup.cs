@@ -17,6 +17,13 @@ using System.Linq;
 using System.Net.Mime;
 using System.Threading.Tasks;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Blazor.Shared.Classes;
+using System.Net.Http;
+using Microsoft.AspNetCore.Blazor.Browser.Services;
 
 namespace Blazor.Server
 {
@@ -34,34 +41,13 @@ namespace Blazor.Server
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-              options.UseSqlite("Filename=data.db"));
-
-            services.AddIdentity<ApplicationUser, IdentityRole<Guid>>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
-
-        
-
+            services.AddSingleton<ApplicationState>();
+            services.AddTransient<JwtDecode>();
+            services.AddSingleton(x => new HttpClient(new AuthenticationDelegationHandler())
+            {});
             services.Configure<Gateway>(Configuration.GetSection("Gateway"));
             services.AddRazorPages();
             services.AddServerSideBlazor();
-
-            services.Configure<IdentityOptions>(options =>
-            {
-                options.Password.RequireDigit = false;
-                options.Password.RequiredLength = 6;
-                options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequireUppercase = false;
-                options.Password.RequireLowercase = false;
-                //options.Password.RequiredUniqueChars = 6;
-
-                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
-                options.Lockout.MaxFailedAccessAttempts = 10;
-                options.Lockout.AllowedForNewUsers = true;
-
-                options.User.RequireUniqueEmail = false;
-            });
             services.AddSingleton<List<IdentitiesToken>>();
             services.Configure<ApiBehaviorOptions>(options =>
             {
@@ -89,17 +75,23 @@ namespace Blazor.Server
                     WasmMediaTypeNames.Application.Wasm,
                 });
             });
-        }
 
+        }
        
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
-            {
-                serviceScope.ServiceProvider.GetService<ApplicationDbContext>().Database.Migrate();
-            }
-
+            //using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            //{
+            //    serviceScope.ServiceProvider.GetService<ApplicationDbContext>().Database.Migrate();
+            //}
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
             app.UseResponseCompression();
+
+            //app.UseHealthChecks("/hc", new HealthCheckOptions()
+            //{
+            //    Predicate = _ => true,
+            //    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+            //});
 
             if (env.IsDevelopment())
             {
@@ -108,10 +100,11 @@ namespace Blazor.Server
             }
 
             app.UseClientSideBlazorFiles<Client.Startup>();
+            
 
             app.UseRouting();
-            app.UseAuthentication();
-            app.UseAuthorization();
+            //app.UseAuthentication();
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

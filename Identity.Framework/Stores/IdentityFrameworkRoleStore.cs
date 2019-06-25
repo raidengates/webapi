@@ -12,6 +12,7 @@ namespace Identity.Framework.Stores
         public IdentityFrameworkRoleStore(IdentityFrameworkDbContext context, IdentityErrorDescriber describer = null) : base(context, describer)
         {
         }
+
         protected override IdentityFrameworkRoleClaim CreateRoleClaim(IdentityFrameworkRole role, Claim claim)
         {
             return new IdentityFrameworkRoleClaim { RoleId = role.Id, ClaimType = claim.Type, ClaimValue = claim.Value };

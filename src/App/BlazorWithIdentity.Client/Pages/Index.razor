@@ -1,24 +1,11 @@
 ﻿@page "/"
 @inject IUriHelper uriHelper
 @inject IdentityAuthenticationState state
-<AuthorizeView>
-    <Authorized>
 
-        <h1>Hello @context.User.Identity.Name !!</h1>
-        <h1>Hello @context.User.FindAll(x => x.Type=="token").SingleOrDefault().Value !!</h1>
-        <p>Welcome to your new app.</p>
+<p>Welcome to your new app.</p>
 
+<SurveyPrompt Title="How is Blazor working for you?" />
 
-
-        <SurveyPrompt Title="How is Blazor working for you?" />
-
-
-
-    </Authorized>
-    <Authorizing>
-        <h1>Loading ...</h1>
-    </Authorizing>
-</AuthorizeView>
 <label class="text-danger">@result</label>
 
 

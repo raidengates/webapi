@@ -14,7 +14,7 @@ namespace Identity.WebApi
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            CreateWebHostBuilder(args).UseUrls("https://localhost:44304").Build().Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>

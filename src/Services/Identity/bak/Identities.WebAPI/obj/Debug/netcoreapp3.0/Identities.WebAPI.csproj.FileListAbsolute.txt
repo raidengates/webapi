@@ -1,0 +1,7 @@
+D:\workspace\webapi\src\Services\Identity\Identities.WebAPI\obj\Debug\netcoreapp3.0\Identities.WebAPI.csprojAssemblyReference.cache
+D:\workspace\webapi\src\Services\Identity\Identities.WebAPI\obj\Debug\netcoreapp3.0\staticwebassets\Identities.WebAPI.StaticWebAssets.Manifest.cache
+D:\workspace\webapi\src\Services\Identity\Identities.WebAPI\obj\Debug\netcoreapp3.0\staticwebassets\Identities.WebAPI.StaticWebAssets.xml
+D:\workspace\webapi\src\Services\Identity\Identities.WebAPI\obj\Debug\netcoreapp3.0\Identities.WebAPI.csproj.CoreCompileInputs.cache
+D:\workspace\webapi\src\Services\Identity\Identities.WebAPI\obj\Debug\netcoreapp3.0\Identities.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\workspace\webapi\src\Services\Identity\Identities.WebAPI\obj\Debug\netcoreapp3.0\Identities.WebAPI.AssemblyInfoInputs.cache
+D:\workspace\webapi\src\Services\Identity\Identities.WebAPI\obj\Debug\netcoreapp3.0\Identities.WebAPI.AssemblyInfo.cs

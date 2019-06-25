@@ -23,7 +23,6 @@
         </BarStart>
         <BarEnd>
             <BarItem>
-
                 <SimpleButton Clicked="@Event_Logout" Color="Color.Secondary">Logout</SimpleButton>
             </BarItem>
         </BarEnd>
@@ -35,10 +34,10 @@
     Task<AuthenticationState> AuthenticationState { get; set; }
     protected override async Task OnParametersSetAsync()
     {
-        if (!(await AuthenticationState).User.Identity.IsAuthenticated)
-        {
-            urihelper.NavigateTo("/login");
-        }
+        //if (!(await AuthenticationState).User.Identity.IsAuthenticated)
+        //{
+        //    urihelper.NavigateTo("/login");
+        //}
     }
 
     async Task Event_Logout()

@@ -2,22 +2,23 @@
 @inject IdentityAuthenticationState state
 @inject IUriHelper uriHelper
 
-<AuthorizeView>
+@*<AuthorizeView>
     <Authorized>
-        <div class="sliderbar">
-            <NavMenu />
-        </div>
-        <div class="main">
-            <div class="container-fluid">
-                @Body
-            </div>
-        </div>
 
-        <div class="footer">
-            <FooterMenu />
-        </div>
     </Authorized>
-</AuthorizeView>
+</AuthorizeView>*@
+<div class="sliderbar">
+    <NavMenu />
+</div>
+<div class="main">
+    <div class="container-fluid">
+        @Body
+    </div>
+</div>
+
+<div class="footer">
+    <FooterMenu />
+</div>
 
 @functions{
 

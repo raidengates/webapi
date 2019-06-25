@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Shared\\Blazor.Shared.csproj": {
-      "version": "1.0.1",
+      "version": "1.0.5",
       "restore": {
         "projectUniqueName": "D:\\workspace\\webapi\\src\\App\\BlazorWithIdentity.Shared\\Blazor.Shared.csproj",
         "projectName": "Blazor.Shared",
@@ -21,7 +21,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -34,7 +34,7 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netstandard2.1": {
             "projectReferences": {}
           }
         },
@@ -45,13 +45,15 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "netstandard2.1": {
           "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
+            "Blazor.Extensions.Storage": {
               "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[0.1.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[11.0.2, )"
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
@@ -67,7 +69,12 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          }
         }
       }
     }

@@ -5120,7 +5120,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "Unititi.Framework/1.1.2": {
+      "Unititi.Framework/1.1.4": {
         "type": "package",
         "dependencies": {
           "AutoMapper": "8.0.0",
@@ -13999,14 +13999,14 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "Unititi.Framework/1.1.2": {
-      "sha512": "ZgxG6DEapdsv9vWD9f57fAKM5PiYBaaBo5ptfAHQgLn7tZK6t4PsOT6EudTar9CJ1ns+yZRdlcSwb6iAmA7DmA==",
+    "Unititi.Framework/1.1.4": {
+      "sha512": "2IHBQ6OvMGivpZWrAaUzggc5av2dbIbuE31estTKz0g99D52towHHY3ek5RO9JV9oDHtyCVAZFbSlB5Aa5CCJg==",
       "type": "package",
-      "path": "unititi.framework/1.1.2",
+      "path": "unititi.framework/1.1.4",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Unititi.Framework.dll",
-        "unititi.framework.1.1.2.nupkg.sha512",
+        "unititi.framework.1.1.4.nupkg.sha512",
         "unititi.framework.nuspec"
       ]
     },
@@ -14029,7 +14029,7 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3",
-      "Unititi.Framework >= 1.1.2",
+      "Unititi.Framework >= 1.1.4",
       "Users.Framework >= 1.1.0"
     ]
   },
@@ -14107,7 +14107,7 @@
           },
           "Unititi.Framework": {
             "target": "Package",
-            "version": "[1.1.2, )"
+            "version": "[1.1.4, )"
           },
           "Users.Framework": {
             "target": "Package",

@@ -21,7 +21,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -36,7 +36,7 @@
           "https://dotnet.myget.org/F/blazor-dev/api/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netstandard2.1": {
             "projectReferences": {}
           }
         },
@@ -47,11 +47,11 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "netstandard2.1": {
           "dependencies": {
             "Blazor.Shared": {
               "target": "Package",
-              "version": "[1.0.1, )"
+              "version": "[1.0.5, )"
             },
             "Blazorise.Bootstrap": {
               "target": "Package",
@@ -72,12 +72,6 @@
             "Microsoft.AspNetCore.Blazor.Build": {
               "target": "Package",
               "version": "[3.0.0-preview6.19307.2, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
             }
           },
           "imports": [
@@ -89,7 +83,12 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          }
         }
       }
     },
@@ -142,9 +141,13 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Blazor.Extensions.Storage": {
+              "target": "Package",
+              "version": "[0.1.8, )"
+            },
             "Blazor.Shared": {
               "target": "Package",
-              "version": "[1.0.1, )"
+              "version": "[1.0.5, )"
             },
             "Blazorise.Bootstrap": {
               "target": "Package",
@@ -161,6 +164,14 @@
             "Blazorise.Sidebar": {
               "target": "Package",
               "version": "[0.7.8, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.0.0-preview6.19307.2, )"
+            },
+            "Microsoft.AspNetCore.Blazor.Browser": {
+              "target": "Package",
+              "version": "[0.6.0, )"
             },
             "Microsoft.AspNetCore.Blazor.Server": {
               "target": "Package",
@@ -197,7 +208,7 @@
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[5.4.0, )"
+              "version": "[5.5.0, )"
             },
             "System.Net.Http.Formatting.Extension": {
               "target": "Package",

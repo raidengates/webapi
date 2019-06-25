@@ -9,6 +9,10 @@ using Users.Framework.Validation;
 using Unititi.Framework.Func;
 using Unititi.Framework.Models;
 using Unititi.Framework.Helpers;
+using System;
+using System.Collections.Generic;
+using System.Security.Claims;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Identity.WebApi.Services
 {
@@ -43,12 +47,37 @@ namespace Identity.WebApi.Services
                     var CheckEqual = _hashEncrypt.AreEqual(password, PasswordUser.Password1, salt);
                     if (CheckEqual)
                     {
+                        
+
+                        DateTime issueTime = DateTime.UtcNow;
+
+                        List<Claim> claims = new List<Claim>
+                          {
+                            new Claim(JwtRegisteredClaimNames.Sub, cUser.AccountName),
+                            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                            new Claim(JwtRegisteredClaimNames.Iat, new DateTimeOffset(DateTime.UtcNow).ToUniversalTime().ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
+                            new Claim(JwtRegisteredClaimNames.GivenName, cUser.FullName)
+                          };
+
+                        claims.Add(new Claim("http://schemas.microsoft.com/ws/2008/06/identity/claims/role", 
+                            ((int)cUser.UserGenderId).ToString(), ClaimValueTypes.Integer32));
+                        var expiryLengthInMinutes = Convert.ToInt32(_appSettings.JwtExpiryInMinutes);
+                        DateTime now = DateTime.UtcNow;
+                        TimeSpan expirationTime = new TimeSpan(0, expiryLengthInMinutes, 0);
+                        var signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_appSettings.Secret));
+                        var signingCredentials = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256);
+
+                        var jwt = new JwtSecurityToken(
+                             _appSettings.JwtIssuer,
+                               _appSettings.JwtIssuer,
+                              claims,
+                              expires: now.Add(expirationTime),
+                              signingCredentials: signingCredentials);
+
+                        var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
+
                         LoginState(true, username, password, context);
-                        var tokenHandler = new JwtSecurityTokenHandler();
-                        var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
-                        IdentityModel _IdentityModel = new IdentityModel() { AccountID = cUser.UserId, AccountName = cUser.AccountName, AccountRoleID = (int)cUser.UserGenderId };
-                        var jwtSecurityToken = _funcIdentity.CreateSecurityTokenDescriptor(_IdentityModel, key);
-                        return new Models.SecurityToken() { auth_token = jwtSecurityToken };
+                        return new Models.SecurityToken() { auth_token = encodedJwt, expirationTime = expirationTime };
                     }
                     else
                     {
@@ -77,6 +106,7 @@ namespace Identity.WebApi.Services
             _loginAttempt.IpAddress = context.Connection.RemoteIpAddress.ToString();
             _loginAttempt.BrowserType = "";
             _loginAttempt.Success = state;
+
             _iUserServices.Create(_loginAttempt);
         }
 
